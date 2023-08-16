@@ -1,0 +1,146 @@
+:root {
+    --Darkblack: #161C24;
+    --DarkGray: #212B36;
+    --gray: #454F5B;
+    --gray600: #637381;
+    --gray500: #919EAB;
+    --gray400: #C4CDD5;
+    --white: #F9FAFB;
+    --greanLigt: #86E8AB;
+    --greenMain: #36B37E;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: var(--DarkGray);
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    height: 100svh;
+    overflow: hidden;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background: var(--Darkblack);
+    margin: 0px;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+header p{
+margin: 0;
+color: var(--greenMain);
+font-size: 1.5rem;
+}
+footer{
+
+    width: 100%;
+    height: 200px;
+    background: var(--Darkblack);
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+main{
+    display: flex;
+   
+}
+
+.mainCont{
+    width: 50%;
+    height: 100svh;
+}
+.main{
+    width: 50%;
+    height: 1023px;
+     display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    color: #161C24;
+    transform: rotate(15deg) translateY(-93px);
+    z-index: -1;
+}
+.main .sub{
+width: 30%;
+}
+.first div:nth-child(odd),.second div:nth-child(even),.third div:nth-child(odd){
+    width:100%;
+    height: 350px;
+    background: var(--white);
+    border-radius: 15px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    
+}
+.first div:nth-child(even),.second div:nth-child(odd),.third div:nth-child(even){
+    width: 100%;
+    height: 250px;
+    background-color: var(--white);
+    border-radius: 15px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+}
+.first{
+animation: first 5s infinite;
+}
+@keyframes first {
+    
+    0%{
+transform: translateY(0);
+    }
+    
+    100%{
+        transform: translateY(-500px);
+    }
+}
+.second{
+    animation: second 30s infinite;
+    }
+    @keyframes second {
+        
+        0%{
+            transform: translateY(-500px);
+   
+        }
+        100%{
+            transform: translateY(0); 
+        }
+    }
+
+    .third{
+        animation: third 30s infinite;
+        }
+        @keyframes third {
+            
+            0%{
+               
+                transform: translateY(0); 
+            }
+            100%{
+                
+                transform: translateY(-500px);
+            }
+        }  
+
+.sub img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+h3{
+    color: var(--greenMain);
+    margin: 0;
+}
+span
+{
+    color: var(--gray);
+    margin: 0;
+}
