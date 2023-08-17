@@ -54,7 +54,10 @@ main{
 
 .mainCont{
     width: 50%;
-    height: 100svh;
+    height: 72svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .main{
     width: 50%;
@@ -143,4 +146,9 @@ span
 {
     color: var(--gray);
     margin: 0;
+}
+h1{
+    font-size: 5rem;
+    color: #53FFAB;
+    filter: drop-shadow(0px 0px 21px #4CE69C);
 }
