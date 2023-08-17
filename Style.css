@@ -89,7 +89,7 @@ width: 30%;
     font-family: 'Manrope', sans-serif;
 }
 .first{
-animation: first 5s infinite;
+animation: first 30s linear infinite;
 }
 @keyframes first {
     
@@ -98,16 +98,16 @@ transform: translateY(0);
     }
     
     100%{
-        transform: translateY(-500px);
+        transform: translateY(-700px);
     }
 }
 .second{
-    animation: second 30s infinite;
+    animation: second 30s linear infinite;
     }
     @keyframes second {
         
         0%{
-            transform: translateY(-500px);
+            transform: translateY(-700px);
    
         }
         100%{
@@ -116,7 +116,7 @@ transform: translateY(0);
     }
 
     .third{
-        animation: third 30s infinite;
+        animation: third 30s linear infinite;
         }
         @keyframes third {
             
@@ -126,7 +126,7 @@ transform: translateY(0);
             }
             100%{
                 
-                transform: translateY(-500px);
+                transform: translateY(-700px);
             }
         }  
 
